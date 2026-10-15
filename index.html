@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self' https://formspree.io; form-action https://formspree.io; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow">
+<title>Graxaim Snooker Bar | Curitiba, Centro</title>
+<meta name="description" content="Graxaim Snooker Bar: mais de 40 anos de história no centro de Curitiba. Sinuca, cerveja gelada, boa companhia e espaço para reservar.">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@300;400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top" id="top">
+  <a class="brand" href="#inicio"><img src="img/logo.png" alt="Graxaim Snooker Bar" width="48" height="48"></a>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  <nav id="nav" aria-label="Principal">
+    <a href="#historia">História</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#cardapio">Cardápio</a>
+    <a href="#promocoes">Promoções</a>
+    <a href="#reservas">Reservas</a>
+    <a href="#trabalhe">Trabalhe conosco</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-in">
+      <p class="kicker">Curitiba, Centro</p>
+      <h1>A lenda<br>continua.</h1>
+      <p class="lead">Mais de quarenta anos de sinuca, conversa e noites que ficam na memória. Agora em um novo ambiente, com a mesma essência.</p>
+      <div class="row">
+        <a class="btn" href="#reservas">Reservar o bar</a>
+        <a class="btn ghost" href="#cardapio">Ver cardápio</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="historia">
+    <div class="wrap two">
+      <div>
+        <h2>Quatro décadas de casa cheia</h2>
+        <p>O Graxaim nasceu como o bar de uma família e cresceu junto com o centro de Curitiba. Por mais de quarenta anos foi ponto de encontro para quem queria uma mesa de sinuca, uma cerveja gelada e uma boa conversa.</p>
+        <p>Hoje seguimos na região central, em um ambiente novo, mais acolhedor e reservado. O que mudou foi o endereço. A hospitalidade, o respeito e o jeito de receber continuam os mesmos.</p>
+        <p class="sig">Família Graxaim</p>
+      </div>
+      <figure class="frame"><img src="img/lenda.png" alt="Fachada do novo Graxaim Snooker Bar" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="sec alt" id="galeria">
+    <div class="wrap">
+      <h2>O ambiente</h2>
+      <div class="car" id="car" aria-roledescription="carrossel" aria-label="Fotos do bar">
+        <div class="track" id="track">
+          <figure class="slide"><img src="img/lenda.png" alt="Fachada do Graxaim" loading="lazy"></figure>
+          <figure class="slide"><img src="img/aviso.png" alt="Mesa de sinuca do Graxaim" loading="lazy"></figure>
+          <!-- Adicione novas fotos: copie um bloco <figure class="slide"> e troque o src por img/sua-foto.jpg -->
+        </div>
+        <button class="nav prev" id="prev" aria-label="Foto anterior">&#8249;</button>
+        <button class="nav next" id="next" aria-label="Próxima foto">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="cardapio">
+    <div class="wrap">
+      <h2>Cardápio</h2>
+      <div class="tabs" role="tablist" aria-label="Categorias do cardápio">
+        <button role="tab" aria-selected="true" aria-controls="p-beb" id="t-beb">Bebidas</button>
+        <button role="tab" aria-selected="false" aria-controls="p-por" id="t-por" tabindex="-1">Porções e pratos</button>
+        <button role="tab" aria-selected="false" aria-controls="p-sin" id="t-sin" tabindex="-1">Sinuca</button>
+      </div>
+      <div class="panel" id="p-beb" role="tabpanel" aria-labelledby="t-beb">
+        <ul class="menu">
+          <li><span>Cervejas</span><i></i><b>R$ 14 a R$ 22</b></li>
+          <li><span>Drinks e doses</span><i></i><b>Consulte no balcão</b></li>
+          <li><span>Refrigerantes e águas</span><i></i><b>Consulte no balcão</b></li>
+        </ul>
+      </div>
+      <div class="panel" id="p-por" role="tabpanel" aria-labelledby="t-por" hidden>
+        <ul class="menu">
+          <li><span>Porções</span><i></i><b>a partir de R$ 20</b></li>
+          <li><span>Prato feito</span><i></i><b>a partir de R$ 20</b></li>
+        </ul>
+      </div>
+      <div class="panel" id="p-sin" role="tabpanel" aria-labelledby="t-sin" hidden>
+        <ul class="menu">
+          <li><span>Mesa de sinuca semioficial</span><i></i><b>R$ 25 por hora</b></li>
+        </ul>
+      </div>
+      <p class="note">Valores sujeitos a alteração. Venda proibida para menores de 18 anos. Beba com moderação.</p>
+    </div>
+  </section>
+
+  <section class="sec alt" id="promocoes">
+    <div class="wrap">
+      <h2>Promoções da semana</h2>
+      <div class="promos" id="promos"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="reservas">
+    <div class="wrap two">
+      <div>
+        <h2>Reserve o Graxaim</h2>
+        <p>Quer um espaço só seu? O bar pode ser reservado e alugado para festas, aniversários, confraternizações e churrascos. Nossa equipe fica à disposição durante o evento e cuida da limpeza depois.</p>
+        <p>Conte o dia e o horário que você pretende e entraremos em contato para combinar os detalhes.</p>
+      </div>
+      <form class="form" id="f-reserva" data-kind="reserva" novalidate>
+        <input type="hidden" name="_subject" value="Nova solicitação de reserva - Graxaim">
+        <label>Nome<input name="nome" required maxlength="80" autocomplete="name"></label>
+        <label>Telefone / WhatsApp<input name="telefone" type="tel" required maxlength="20" inputmode="tel" autocomplete="tel"></label>
+        <label>E-mail (opcional)<input name="email" type="email" maxlength="100" autocomplete="email"></label>
+        <div class="grid2">
+          <label>Data<input name="data" type="date" required></label>
+          <label>Horário<input name="horario" type="time" required></label>
+        </div>
+        <label>Tipo de evento
+          <select name="evento" required>
+            <option value="">Selecione</option>
+            <option>Festa</option><option>Churrasco</option><option>Aniversário</option><option>Confraternização</option><option>Outro</option>
+          </select>
+        </label>
+        <label>Mensagem (opcional)<textarea name="mensagem" rows="3" maxlength="500"></textarea></label>
+        <input class="hp" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn" type="submit">Enviar solicitação</button>
+        <p class="status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="sec alt" id="trabalhe">
+    <div class="wrap two">
+      <div>
+        <h2>Trabalhe conosco</h2>
+        <p>Procuramos pessoas maiores de 18 anos, com boa presença e que gostem de receber bem. Seu cadastro é tratado com sigilo e só a administração tem acesso.</p>
+      </div>
+      <form class="form" id="f-vaga" data-kind="vaga" novalidate>
+        <input type="hidden" name="_subject" value="Novo cadastro - Trabalhe conosco - Graxaim">
+        <label>Nome ou nome artístico<input name="nome" required maxlength="80" autocomplete="off"></label>
+        <label>WhatsApp<input name="telefone" type="tel" required maxlength="20" inputmode="tel" autocomplete="off"></label>
+        <label>Idade<input name="idade" type="number" min="18" max="99" required></label>
+        <label>Conte um pouco sobre você (opcional)<textarea name="mensagem" rows="3" maxlength="500"></textarea></label>
+        <label class="check"><input type="checkbox" name="maior18" required> Declaro que tenho 18 anos ou mais</label>
+        <label class="check"><input type="checkbox" name="lgpd" required> Autorizo o uso dos meus dados apenas para contato sobre vagas</label>
+        <input class="hp" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn" type="submit">Enviar cadastro</button>
+        <p class="status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" id="contato">
+  <div class="wrap cols">
+    <div>
+      <h3>Horário</h3>
+      <p>Segunda a sexta: 16h às 00h<br>Sábado: 14h às 00h<br>Domingo: fechado</p>
+    </div>
+    <div>
+      <h3>Endereço</h3>
+      <p>R. Desembargador Clotário Portugal, 39<br>Centro, Curitiba/PR</p>
+      <h3>Contato</h3>
+      <p>
+        <a href="https://www.instagram.com/graxaimbar/" target="_blank" rel="noopener noreferrer">@graxaimbar no Instagram</a><br>
+        <!-- Troque pelo número real, só dígitos com DDI: 5541999999999 -->
+        <a href="https://wa.me/5541000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </p>
+    </div>
+    <div class="map">
+      <iframe title="Mapa do Graxaim Snooker Bar" loading="lazy" referrerpolicy="no-referrer-when-downgrade" sandbox="allow-scripts allow-same-origin" src="https://www.google.com/maps?q=R.+Desembargador+Clot%C3%A1rio+Portugal,+39,+Centro,+Curitiba+-+PR&amp;output=embed"></iframe>
+    </div>
+  </div>
+  <p class="copy">&copy; <span id="y"></span> Graxaim Snooker Bar. Proibido para menores de 18 anos. Beba com moderação.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
